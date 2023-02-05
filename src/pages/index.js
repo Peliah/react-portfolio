@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {BsMoonStarsFill} from 'react-icons/bs'
+import {BsMoonStarsFill, BsStar} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillTwitterCircle} from 'react-icons/ai'
 import { useState } from 'react'
 import logo from '../../public/logo.png'
@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main className='bg-gradient-to-b from-slate-200 to-slate-100  dark:bg-gradient-to-b dark:from-cyan-900 dark:to-teal-700'>
+      <main className='bg-gradient-to-b from-slate-200 to-slate-100  dark:bg-gradient-to-b dark:from-cyan-900 dark:to-teal-900'>
         <section className='min-h-screen' >
           <nav className='py-10 flex justify-between shadow-md px-10 md:px20 lg:px-20'>
             <div>
@@ -102,19 +102,24 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <footer className=' bg-gradient-to-r from-cyan-800 to-teal-800 py-16 flex justify-between shadow-sm px-10 md:px20 lg:px-20'>
-            <div className='flex justify-between gap-2'>
-              <Image src={logo} width="50" height="50" className='rounded-full w-16 h-16'/>
-              <h1 className='text-xl font-burtons'>peliaH</h1>
+          <footer className=' bg-gradient-to-r from-cyan-800 to-teal-800 pt-8  shadow-sm px-10 md:px20 lg:px-20'>
+            <div className='flex justify-between'>
+              <div className='flex justify-between gap-2'>
+                <Image src={logo} width="50" height="50" className='rounded-full w-16 h-16'/>
+                <h1 className='text-xl font-burtons'>peliaH</h1>
+              </div>
+              <div>
+              <h3 className='font-burtons'>Social</h3>
+              <div className='text-4xl flex justify-center gap-16 py-3 text-gray-800 dark:text-black'>
+                <a href='https://www.github.com/peliah'><AiFillGithub /></a>
+                <a href='https://www.linkedin.com/in/pelayah-epoupa-12830a198'><AiFillLinkedin/></a>
+                <a href='https://www.twitter.com/pelayah_epoupa'><AiFillTwitterCircle/></a>
+                <a href='#'><AiFillInstagram/></a>
+              </div>
+              </div>
             </div>
-            <div>
-            <h3 className='font-burtons'>Social</h3>
-            <div className='text-4xl flex justify-center gap-16 py-3 text-gray-800 dark:text-black'>
-              <a href='https://www.github.com/peliah'><AiFillGithub /></a>
-              <a href='https://www.linkedin.com/in/pelayah-epoupa-12830a198'><AiFillLinkedin/></a>
-              <a href='https://www.twitter.com/pelayah_epoupa'><AiFillTwitterCircle/></a>
-              <a href='#'><AiFillInstagram/></a>
-            </div>
+            <div className='pt-8 flex justify-center gap-2 pb-4'>
+              <p>Check out my github and leave a star</p><BsStar color='yellow'/>
             </div>
           </footer>
         </section>
