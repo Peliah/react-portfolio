@@ -103,7 +103,7 @@ export default function Home() {
         </section>
         <section>
           <footer className=' bg-gradient-to-r from-cyan-800 to-teal-800 pt-8  shadow-sm px-10 md:px20 lg:px-20'>
-            <div className='flex justify-between'>
+            <div className='md:flex justify-between'>
               <div className='flex justify-between gap-2'>
                 <Image src={logo} width="50" height="50" className='rounded-full w-16 h-16'/>
                 <h1 className='text-xl font-burtons'>peliaH</h1>
