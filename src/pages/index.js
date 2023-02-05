@@ -104,12 +104,12 @@ export default function Home() {
         <section>
           <footer className=' bg-gradient-to-r from-cyan-800 to-teal-800 pt-8  shadow-sm px-10 md:px20 lg:px-20'>
             <div className='md:flex justify-between'>
-              <div className='flex justify-between gap-2'>
+              <div className='md:flex justify-between gap-2'>
                 <Image src={logo} width="50" height="50" className='rounded-full w-16 h-16'/>
                 <h1 className='text-xl font-burtons'>peliaH</h1>
               </div>
-              <div>
-              <h3 className='font-burtons'>Social</h3>
+              <div className='flex-col place-items-center'>
+              {/* <h3 className='font-burtons'>Social</h3> */}
               <div className='text-4xl flex justify-center gap-16 py-3 text-gray-800 dark:text-black'>
                 <a href='https://www.github.com/peliah'><AiFillGithub /></a>
                 <a href='https://www.linkedin.com/in/pelayah-epoupa-12830a198'><AiFillLinkedin/></a>
